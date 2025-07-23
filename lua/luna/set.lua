@@ -1,7 +1,8 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
-vim.cmd('filetype plugin indent on')
+vim.o.foldmethod = "expr"
+vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.tabstop = 3
 vim.opt.softtabstop = 3
 vim.opt.shiftwidth = 3
