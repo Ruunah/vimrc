@@ -1,4 +1,7 @@
 local conform = require("conform")
+require('mason').setup({
+      ensure_installed = {'stylua', 'pyink', 'clang_format'}
+   })
 
 conform.setup({
    formatters_by_ft = {
