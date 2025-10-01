@@ -1,6 +1,6 @@
 require('code_runner').setup({
   filetype = {
-    python = "python3 -u",
+    python = "python -u",
     c = function(...)
       c_base = {
         "cd $dir &&",
